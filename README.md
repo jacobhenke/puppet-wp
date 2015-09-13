@@ -7,18 +7,18 @@ commands as well as installing the WP CLI binaries as needed.
 I've made just a few tweaks from the version by [hdeadman](https://github.com/hdeadman/puppet-wp) 
 which was based on the orignal from [rmccue](https://github.com/rmccue/puppet-wp).
 
-I only use it to get the cli installed. Just add via another .pp file: 
-`class { 'wp::cli': }`
-
 ## Installation
 ### Via Git
 
-	# (Assuming your modules directory is "modules/")
-	# As a standalone repo
-    `git clone https://github.com/jacobhenke/puppet-wp.git modules/wp`
+(Assuming your modules directory is "modules/")
+As a standalone repo
+`git clone https://github.com/jacobhenke/puppet-wp.git modules/wp`
 
-    # As a submodule
-    `git submodule add https://github.com/jacobhenke/puppet-wp.git modules/wp`
+As a submodule
+`git submodule add https://github.com/jacobhenke/puppet-wp.git modules/wp`
+
+I only use it to get the cli installed. Just add via another .pp file: 
+`class { 'wp::cli': }`
 
 ## Usage
 ```puppet
