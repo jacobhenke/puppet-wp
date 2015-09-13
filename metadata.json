@@ -7,12 +7,7 @@
   "source": "https://github.com/rmccue/puppet-wp",
   "project_page": "https://github.com/rmccue/puppet-wp",
   "issues_url": "https://github.com/jacobhenke/puppet-wp/issues",
-  "operatingsystem_support": [
-    {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    }
-   ]
+  "dependencies": [
+
+  ]
 }
