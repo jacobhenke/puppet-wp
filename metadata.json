@@ -1,0 +1,18 @@
+{
+  "name": "jacobhenke-wp",
+  "version": "1.2.0",
+  "author": "Ryan McCue",
+  "license": "MIT License",
+  "summary": "Manage your WordPress installations with wp-cli",
+  "source": "https://github.com/rmccue/puppet-wp",
+  "project_page": "https://github.com/rmccue/puppet-wp",
+  "issues_url": "https://github.com/jacobhenke/puppet-wp/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+   ]
+}

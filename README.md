@@ -3,22 +3,25 @@ This module enables the easy use of WP CLI to control your WordPress site
 through Puppet manifests. It provides an easy abstraction for common WP CLI
 commands as well as installing the WP CLI binaries as needed.
 
+## History
+I've made just a few tweaks from the version by [hdeadman](https://github.com/hdeadman/puppet-wp) 
+which was based on the orignal from [rmccue](https://github.com/rmccue/puppet-wp).
+
+I only use it to get the cli installed. Just add via another .pp file: 
+`class { 'wp::cli': }`
+
 ## Installation
 ### Via Git
 
 	# (Assuming your modules directory is "modules/")
 	# As a standalone repo
-    git clone https://github.com/rmccue/puppet-wp.git modules/wp
+    `git clone https://github.com/jacobhenke/puppet-wp.git modules/wp`
 
     # As a submodule
-    git submodule add https://github.com/rmccue/puppet-wp.git modules/wp
-
-### Via the Puppet Forge
-Puppet WP-CLI is also available via [Puppet Forge](http://forge.puppetlabs.com/rmccue/wp).
-
-    puppet module install rmccue/wp
+    `git submodule add https://github.com/jacobhenke/puppet-wp.git modules/wp`
 
 ## Usage
+```puppet
 	wp::download {'store' : 
 	  location => '/vagrant/wp',
 	  version => '4.1',
@@ -74,6 +77,7 @@ Puppet WP-CLI is also available via [Puppet Forge](http://forge.puppetlabs.com/r
 			location => '/vagrant/wp',
 			require => Wp::Site['store'],
 		}
+```
 
 ## License
 This code is licensed under the MIT license.
